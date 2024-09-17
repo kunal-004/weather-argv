@@ -5,7 +5,7 @@ const geoCode = async (address, callback) => {
   
     `${process.env.API_BASE_URL1}?access_key=${
       process.env.API_ACCESS_KEY_GEOCODE
-    }&query=${"tokyo"}&limit=1`
+    }&query=${address}&limit=1`
   );
 
   if (error) {
