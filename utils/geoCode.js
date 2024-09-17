@@ -2,9 +2,7 @@ const axios = require("axios");
 
 const geoCode = async (address, callback) => {
   const { data, error } = await axios.get(
-    // `https://api.positionstack.com/v1/forward?access_key=b4d33d166241b128cc3f1079cc830973&query=${encodeURIComponent(
-    //   address
-    // )}&limit=1`
+  
     `${process.env.API_BASE_URL1}?access_key=${
       process.env.API_ACCESS_KEY_GEOCODE
     }&query=${"tokyo"}&limit=1`
