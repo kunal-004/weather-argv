@@ -3,7 +3,6 @@ const { default: axios } = require("axios");
 const getData = async (lat, lng, name, callback) => {
   const { data, error } = await axios.get(
     //has data property , destructure it
-    // `https://api.pirateweather.net/forecast/u7dpwikpHS41aNP5dY72NBHxw58v8pff/${lat},${lng}?units=si&lang=`
 
     `${process.env.API_BASE_URL2}/${process.env.API_ACCESS_KEY_WEATHER}/${lat},${lng}?units=si&lang=`
   );
