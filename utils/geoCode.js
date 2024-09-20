@@ -2,9 +2,13 @@ const axios = require("axios");
 
 const geoCode = async (address, callback) => {
   const { data, error } = await axios.get(
+<<<<<<< HEAD
+=======
+  
+>>>>>>> b2eeddc0abdf3b2680b4a0efa952868ee1a15c91
     `${process.env.API_BASE_URL1}?access_key=${
       process.env.API_ACCESS_KEY_GEOCODE
-    }&query=${"tokyo"}&limit=1`
+    }&query=${address}&limit=1`
   );
 
   if (error) {

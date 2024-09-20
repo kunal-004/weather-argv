@@ -2,7 +2,10 @@ const { default: axios } = require("axios");
 
 const getData = async (lat, lng, name, callback) => {
   const { data, error } = await axios.get(
+<<<<<<< HEAD
     //has data property , destructure it
+=======
+>>>>>>> b2eeddc0abdf3b2680b4a0efa952868ee1a15c91
 
     `${process.env.API_BASE_URL2}/${process.env.API_ACCESS_KEY_WEATHER}/${lat},${lng}?units=si&lang=`
   );
